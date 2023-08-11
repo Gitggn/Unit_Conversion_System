@@ -1,0 +1,370 @@
+#include <stdio.h>
+#include<conio.h>
+int main() {
+     int num,c;
+     float n;
+  printf("**Program for Unit Conversion**\n");
+  printf("------------------------------------------------------------------------------\n");
+  printf("press 1 for Temprature  || 2 for Distance || 3 for Time || 4 for volume || 5 for Mass\n");
+  printf("------------------------------------------------------------------------------\n");
+     scanf("%d",&num);
+     if(num==1){
+  printf("you_choose_Temprerature_conversion:\n");
+ printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+  printf("press 1=celsius to kelvin ||2= celsius to fahrenheit ||3= fahrenheit to kelvin ||4=kelvin to celsius ||5=kelvin to fahrenheit ||6=fahrenheit to celsius\n");
+  printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+          scanf("%d",&c);
+    printf("----------------------------------------------------------------------------\n");
+    
+          switch(c)
+          {
+case 1:printf("you choose celsius to kelvin conversion\n");
+printf("----------------------------------------------------------------------------\n");
+        printf("Enter your number to be converted:");
+                     scanf("%f",&n);
+                     n=n+273.15;
+//          printf("----------------------------------------------------------------------------\n");                 
+          printf("conversion is: %.2f",n);
+          printf("----------------------------------------------------------------------------\n");
+                     break;
+ case 2:printf("you choose celsius to fahrenheit conversion\n");
+ printf("----------------------------------------------------------------------------\n");
+              printf("Enter your number to be converted:");
+              printf("----------------------------------------------------------------------------\n");
+               scanf("%f",&n);
+                     n=(n*9/5)+32;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is: %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+ case 3:printf("you choose fahrenheit to kelvin conversion\n");
+ printf("----------------------------------------------------------------------------\n");
+       printf("Enter your number to be converted:");
+       printf("----------------------------------------------------------------------------\n");
+              scanf("%f",&n);
+                     n=(n-32)*5/9 +273.15;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+case 4:printf("you choose kelvin to celsius conversion\n");
+printf("----------------------------------------------------------------------------\n");
+     printf("Enter your number to be converted:");
+     printf("----------------------------------------------------------------------------\n");
+                   scanf("%f",&n);
+                     n=n-273.15;
+                     printf("----------------------------------------------------------------------------\n");
+                    printf("conversion is: %f",n);
+                    printf("----------------------------------------------------------------------------\n");
+                     break;
+ case 5:printf("you choose kelvin to fahrenheit conversion\n");
+ printf("----------------------------------------------------------------------------\n");
+         printf("Enter your number to be converted:");
+         printf("----------------------------------------------------------------------------\n");
+                scanf("%f",&n);
+                     n=1.8*n - 459.67;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+  case 6:printf("you choose fahrenheit to celsius conversion\n");
+  printf("----------------------------------------------------------------------------\n");
+        printf("Enter your number to be converted:");
+        printf("----------------------------------------------------------------------------\n");
+                scanf("%f",&n);
+                     n=(5/9)*(n-32);
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is: %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+          }
+          
+     }
+      else if(num==2){
+          printf("you choose Distance conversion\n");
+     printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+          printf("press for 1=km to m ||2=m to cm ||3= cm to mm ||4=m to km ||5=cm to m ||6=mm to cm\n");
+    printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+          scanf("%d",&c);
+          switch(c)
+          {
+     case 1:printf("you choose km to m conversion\n");
+     printf("----------------------------------------------------------------------------\n");
+            printf("Enter your number to be converted:");
+            printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n*1000;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is: %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+      case 2:printf("you choose m to cm conversion\n");
+      printf("----------------------------------------------------------------------------\n");
+             printf("Enter your number to be converted:");
+             printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n*100;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is: %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+    case 3:printf("you choose cm to mm conversion\n");
+    printf("----------------------------------------------------------------------------\n");
+           printf("Enter your number to be converted:");
+           printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n*10;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+    case 4:printf("you choose m to km conversion\n");
+    printf("----------------------------------------------------------------------------\n");
+           printf("Enter your number to be converted:\n");
+           printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n/1000;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+    case 5:printf("you choose cm to m conversion\n");
+    printf("----------------------------------------------------------------------------\n");
+           printf("Enter your number to be converted:\n");
+           printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n/100;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+    case 6:printf("you choose mm to cm conversion\n");
+    printf("----------------------------------------------------------------------------\n");
+           printf("Enter your number to be converted:\n");
+           printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n/10;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break; }
+      }
+      else if(num==3)
+       {
+        printf("you choose Time conversion\n");
+     printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+        printf(" press for 1 = hr to min ||2 = min to sec ||3 = hr to sec ||4 = min to hr ||5 = sec to min ||6 = sec to hr");
+    printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+        scanf("%d",&c);
+          switch(c)
+          {
+    case 1:printf("you choose hr to min conversion \n");
+    printf("----------------------------------------------------------------------------\n");
+           printf("Enter your number to be converted:\n");
+           printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n*60;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is: %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+    case 2:printf("you choose min to sec conversion\n");
+    printf("----------------------------------------------------------------------------\n");
+           printf("Enter your number to be converted:\n");
+           printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n*60;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is: %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+  case 3:printf("you choose hr to sec conversion\n");
+  printf("----------------------------------------------------------------------------\n");
+         printf("Enter your number to be converted:\n");
+         printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n*60*60;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+ case 4:printf("you choose min to hr conversion\n");
+ printf("----------------------------------------------------------------------------\n");
+        printf("Enter your number to be converted:\n");
+        printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n/60;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+ case 5:printf("you choose sec to min conversion\n");
+ printf("----------------------------------------------------------------------------\n");
+     printf("Enter your number to be converted:\n");
+     printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n/60;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+ case 6:printf("you choose sec to hr conversion\n");
+ printf("----------------------------------------------------------------------------\n");
+        printf("Enter your number to be converted:\n");
+        printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n/3600;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+          }
+           
+       }
+       else if(num==4){
+         printf("you choose Volume conversion\n");
+         
+   printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+         printf("press for 1=kl to l ||2=l to ml ||3= kl to ml ||4=l to kl ||5=ml to l ||6=ml to kl \n");
+   printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+          scanf("%d",&c);
+          switch(c)
+          {
+    case 1:printf("you choose kl to l conversion \n");
+    printf("----------------------------------------------------------------------------\n");
+           printf("Enter your number to be converted:\n");
+           printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n*1000;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is: %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+    case 2:printf("you choose l to ml conversion\n");
+    printf("----------------------------------------------------------------------------\n");
+           printf("Enter your number to be converted:\n");
+           printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n*1000;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is: %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+    case 3:printf("you choose kl to ml conversion\n");
+    printf("----------------------------------------------------------------------------\n");
+           printf("Enter your number to be converted:\n");
+           printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n*1000000;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+    case 4:printf("you choose l to kl conversion\n");
+    printf("----------------------------------------------------------------------------\n");
+           printf("Enter your number to be converted:\n");
+           printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n/1000;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+    case 5:printf("you choose ml to l conversion\n");
+    printf("----------------------------------------------------------------------------\n");
+           printf("Enter your number to be converted:\n");
+           printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n/1000;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+     case 6:printf("you choose ml to kl conversion\n");
+     printf("----------------------------------------------------------------------------\n");
+            printf("Enter your number to be converted:\n");
+            printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n/100000;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+          }
+           
+       }
+       else if(num==5){
+           printf("you choose Mass conversion\n");
+   printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+            printf("press for 1 = kg to gm ||2 = gm to mg ||3 = kg to mg ||4 = gm to kg ||5 = mg to gm ||6 = mg to kg \n");
+   printf("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n");
+          scanf("%d",&c);
+          switch(c)
+          {
+    case 1:printf("you choose kg to gm conversion \n");
+    printf("----------------------------------------------------------------------------\n");
+           printf("Enter your number to be converted:\n");
+           printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n*1000;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is: %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+     case 2:printf("you choose gm to mg conversion\n");
+     printf("----------------------------------------------------------------------------\n");
+          printf("Enter your number to be converted:\n");
+          printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n*1000;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is: %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+    case 3:printf("you choose kg to mg conversion\n");
+    printf("----------------------------------------------------------------------------\n");
+          printf("Enter your number to be converted:\n");
+          printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n*1000000;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+    case 4:printf("you choose gm to kg conversion\n");
+    printf("----------------------------------------------------------------------------\n");
+           printf("Enter your number to be converted:\n");
+           printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n/1000;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+    case 5:printf("you choose mg to gm conversion\n");
+    printf("----------------------------------------------------------------------------\n");
+           printf("Enter your number to be converted:\n");
+           printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n/1000;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+    case 6:printf("you choose mg to kg conversion\n");
+    printf("----------------------------------------------------------------------------\n");
+           printf("Enter your number to be converted:\n");
+           printf("----------------------------------------------------------------------------\n");
+                     scanf("%f",&n);
+                     n=n/100000;
+                     printf("----------------------------------------------------------------------------\n");
+                     printf("conversion is %f",n);
+                     printf("----------------------------------------------------------------------------\n");
+                     break;
+          }
+       }
+    else
+    printf("Wrong input");
+    printf("\n****************************************************************");
+    return 0;
+}
